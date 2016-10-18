@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package >
+	<metadata>
+		<id>PSTeamCityREST</id>
+		<version>1.0.0</version>
+		<authors>Nathan Stohlmann</authors>
+		<owners>Nathan Stohlmann</owners>
+		<licenseUrl>https://github.com/Cavorter/PSTeamCityREST/blob/master/LICENSE</licenseUrl>
+		<projectUrl>https://github.com/Cavorter/PSTeamCityREST</projectUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>PowerShell module that wraps interaction with the TeamCity REST API</description>
+		<releaseNotes></releaseNotes>
+		<copyright>Copyright 2016</copyright>
+		<tags>Powershell Module TeamCity</tags>
+		<!--<dependencies>
+			<dependency id="SampleDependency" version="1.0" />
+		</dependencies> -->
+	</metadata>
+	<files>
+		<file src="PSTeamCityREST.*" />
+		<file src="LICENSE." />
+		<file src="Functions\**\*.ps1" target="Functions" exclude="*.Tests.*" />
+	</files>
+</package>

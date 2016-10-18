@@ -1,3 +1,3 @@
-foreach ( $function in (Get-ChildItem -Path $PSScriptRoot\Functions\*.ps1 -Exclude *.Test.*) ) {
+foreach ( $function in (Get-ChildItem -Path $PSScriptRoot\Functions\*.ps1 -Exclude *.Tests.*) ) {
 	. $function.FullName
 }
