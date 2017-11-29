@@ -3,7 +3,7 @@ $sut = (Split-Path -Leaf $MyInvocation.MyCommand.Path) -replace '\.Tests\.', '.'
 . "$here\$sut"
 
 Describe "Get-BuildArtifacts" {
-	Mock -Command Invoke-RestMethod -With { return $true }
+	Mock -Command Invoke-RestMethod -MockWith { return $true }
 
 	Context "Parameter Validation" {
 		$serverVal = "http://not.a.real.server.url"

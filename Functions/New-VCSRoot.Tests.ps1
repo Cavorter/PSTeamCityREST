@@ -4,7 +4,7 @@
 Set-Alias -Name Test-Function -Value $functionName -Scope Script
 
 Describe "$functionName" {
-	Mock -Command Invoke-RestMethod -With { return $true }
+	Mock -Command Invoke-RestMethod -MockWith { return $true }
 
 	$inVal = '{"id":"someRoot","name":"Some Root"}'
 	

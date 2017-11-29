@@ -13,7 +13,7 @@ Describe "$functionName" {
 	$goodId = "some_id"
 	$goodName = "Some Build Configuration"
 	
-	Mock -CommandName Invoke-RestMethod -With { return $true }
+	Mock -CommandName Invoke-RestMethod -MockWith { return $true }
 
 	It "the Mandatory attribute for the Server parameter is $true" {
 		( Get-Command -Name $functionName ).Parameters.Server.Attributes.Mandatory | Should Be $true
